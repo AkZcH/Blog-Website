@@ -1,0 +1,331 @@
+/* Navbar styling */
+.navbar-dark {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    border-bottom: 2px solid #302b63;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-brand .brand-logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-brand .brand-logo:hover {
+    color: #00d4ff;
+  }
+  
+  .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #00d4ff;
+    transform: translateY(-5px);
+    transition: 300ms all ease;
+
+  }
+  
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #00d4ff;
+    left: 50%;
+    bottom: -4px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-left: 20px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 212, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  .dropdown-menu {
+    background-color: #24243e;
+    border: none;
+  }
+  
+  .dropdown-item {
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #302b63;
+    color: #00d4ff;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+/* Instagram-themed button */
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+/* Hover effect */
+.btn-instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+     transform: translateY(-5px); /* Move the button 5px upward */
+    transition: 300ms all ease;
+}
+    
+
+/* SVG Icon color matching Instagram theme */
+.btn-instagram svg {
+    fill: #fff;
+}
+
+
+
+/* LinkedIn-themed button */
+.btn-linkedin {
+    background: linear-gradient(45deg, #0077b5, #005582); /* LinkedIn Blue Gradient */
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+/* Hover effect */
+.btn-linkedin:hover {
+    background: linear-gradient(45deg, #0077b5, #005582); /* LinkedIn Blue Gradient */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+     transform: translateY(-5px); /* Move the button 5px upward */
+    transition: 300ms all ease;
+}
+
+/* Ensure text color stays white on hover */
+.btn-linkedin:link,
+.btn-linkedin:visited,
+.btn-linkedin:hover,
+.btn-linkedin:active {
+    color: #fff;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* SVG Icon color matching LinkedIn theme */
+.btn-linkedin svg {
+    fill: #fff;
+}
+
+
+/* GitHub-themed button with gradient black background */
+.btn-github {
+    color: #fff;
+    background: linear-gradient(45deg, #444, #222); /* Slightly lighter to darker gradient on hover */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-github.text-white {
+    color: #fff; /* Sets the text color to white */
+}
+
+
+.btn-github:focus, .btn-github:active {
+    outline: none; /* Remove focus outline */
+    border: none; /* Ensure no borders are added */
+  }
+  
+
+/* Hover effect with upward movement */
+.btn-github:hover {
+    background: linear-gradient(45deg, #555, #333); /* Slightly lighter to darker gradient on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Move the button 5px upward */
+    transition: 300ms all ease;
+}
+
+
+/* SVG Icon color matching button text */
+.btn-github svg {
+    fill: #fff; /* White color for the icon */
+}
+
+button, a {
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    outline: none; /* Remove focus outline */
+  }
+  
+
+
+.resume-button-container {
+    text-align: center;
+}
+
+.resume-button {
+  color: black;
+    background: linear-gradient(45deg, #ffffff, #909090); /* Slightly lighter to darker gradient on hover */
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text-black{
+  color: black;
+}
+.resume-button svg {
+    margin-right: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.resume-button:hover {
+  transform: translateY(-5px);
+    transition: all 0.3s ease;
+
+}
+
+.resume-button:hover svg {
+    transform: scale(1.2);
+}
+
+:root {
+  --background-color-light: #ffffff;
+  --background-color-dark: #121212;
+  --text-color-light: #000000;
+  --text-color-dark: #ffffff;
+}
+
+body.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#modeLabel {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
